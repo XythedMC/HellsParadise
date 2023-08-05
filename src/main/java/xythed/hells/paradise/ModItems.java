@@ -1,4 +1,4 @@
-package xythed.hells_paradise;
+package xythed.hells.paradise;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -22,7 +22,7 @@ public class ModItems {
 
 
     public static Item registerItem(String name, Item item) {
-		return Registry.register(Registries.ITEM, new Identifier("hells_paradise", name), item);
+		return Registry.register(Registries.ITEM, new Identifier("hellsparadise", name), item);
 	}
 
 	public static void addItemToItemGroupIngredients(FabricItemGroupEntries entries){

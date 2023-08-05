@@ -1,4 +1,4 @@
-package xythed.hells_paradise;
+package xythed.hells.paradise;
 
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;

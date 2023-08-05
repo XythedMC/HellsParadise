@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "hells_paradise",
+	"id": "hellsparadise",
 	"version": "${version}",
 	"name": "Hell's Paradise",
 	"description": "This is mod adds reaper/grim reaper armor, ingot and scythe to Minecraft!",
@@ -12,20 +12,20 @@
 		"sources": ""
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/hells_paradise/icon.png",
+	"icon": "assets/hellsparadise/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"xythed.hells_paradise.HellsParadise"
+			"xythed.hells.paradise.HellsParadise"
 		],
 		"client": [
-			"xythed.hells_paradise.HellsParadiseClient"
+			"xythed.hells.paradise.HellsParadiseClient"
 		]
 	},
 	"mixins": [
-		"hells_paradise.mixins.json",
+		"hellsparadise.mixins.json",
 		{
-			"config": "hells_paradise.client.mixins.json",
+			"config": "hellsparadise.client.mixins.json",
 			"environment": "client"
 		}
 	],

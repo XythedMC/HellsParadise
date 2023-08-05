@@ -1,4 +1,4 @@
-package xythed.hells_paradise;
+package xythed.hells.paradise;
 
 import net.fabricmc.api.ClientModInitializer;
 

@@ -1,4 +1,4 @@
-package xythed.hells_paradise.mixin;
+package xythed.hells.paradise.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
