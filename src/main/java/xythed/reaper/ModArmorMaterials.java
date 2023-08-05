@@ -1,4 +1,4 @@
-package xythed.reaper;
+package xythed.hells_paradise;
 
 import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;

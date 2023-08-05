@@ -1,4 +1,4 @@
-package xythed.reaper;
+package xythed.hells_paradise;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -22,7 +22,7 @@ public class ModItems {
 
 
     public static Item registerItem(String name, Item item) {
-		return Registry.register(Registries.ITEM, new Identifier("reaper", name), item);
+		return Registry.register(Registries.ITEM, new Identifier("hells_paradise", name), item);
 	}
 
 	public static void addItemToItemGroupIngredients(FabricItemGroupEntries entries){
@@ -43,7 +43,7 @@ public class ModItems {
 	}
 
     public static void registerModItems(){
-        Reaper.LOGGER.info("Registering Mod Items for reaper");
+        HellsParadise.LOGGER.info("Registering Mod Items for Hell's Paradise");
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToItemGroupIngredients);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemToItemGroupCombat);
     }

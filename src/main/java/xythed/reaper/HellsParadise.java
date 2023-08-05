@@ -1,10 +1,10 @@
-package xythed.reaper;
+package xythed.hells_paradise;
 
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Reaper implements ModInitializer {
+public class HellsParadise implements ModInitializer {
 	
     public static final Logger LOGGER = LoggerFactory.getLogger("modid");
 

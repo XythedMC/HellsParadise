@@ -8,7 +8,7 @@
     ],
     "key": {
         "o": {
-            "item": "reaper:soul"
+            "item": "hells_paradise:soul"
         },
         "d": {
             "item": "itemalchemy:dark_matter"
@@ -22,6 +22,6 @@
     
     },
     "result": {
-        "item": "reaper:reaperite_ingot"
+        "item": "hells_paradise:reaperite_ingot"
     }
 }

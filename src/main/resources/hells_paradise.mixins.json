@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "xythed.reaper.mixin.client",
+	"package": "xythed.hells_paradise.mixin",
 	"compatibilityLevel": "JAVA_17",
-	"client": [
-		"ReaperClientMixin"
+	"mixins": [
+		"HellsParadiseMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

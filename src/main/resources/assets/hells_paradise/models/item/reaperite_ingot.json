@@ -1,7 +1,7 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "reaper:item/reaperite_helmet"
+        "layer0": "hells_paradise:item/reaperite_ingot"
     }
 
 }
