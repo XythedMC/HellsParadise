@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "ingredients",
+    "pattern": [
+        "sss",
+        "sos",
+        "sds"
+    ],
+    "key": {
+        "o": {
+            "item": "minecraft:soul_sand"
+        },
+        "d": {
+            "item": "minecraft:soul_soil"
+        },
+        "s": {
+            "item": "minecraft:diamond_shovel"
+        }
+    
+    },
+    "result": {
+        "item": "reaper:soul"
+    }
+}

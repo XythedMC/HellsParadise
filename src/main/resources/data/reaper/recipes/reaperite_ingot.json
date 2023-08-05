@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "ingredients",
+    "pattern": [
+        "dpd",
+        "ono",
+        "dnd"
+    ],
+    "key": {
+        "o": {
+            "item": "reaper:soul"
+        },
+        "d": {
+            "item": "itemalchemy:dark_matter"
+        },
+        "p": {
+            "item": "itemalchemy:philosopher_stone"
+        },
+        "n": {
+            "item": "advancednetherite:netherite_diamond_ingot"
+        }
+    
+    },
+    "result": {
+        "item": "reaper:reaperite_ingot"
+    }
+}

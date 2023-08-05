@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "reaper",
+	"version": "${version}",
+	"name": "Reaper",
+	"description": "This is mod adds reaper/grim reaper armor, ingot and scythe to Minecraft!",
+	"authors": [
+		"Xythed"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/reaper/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"xythed.reaper.Reaper"
+		],
+		"client": [
+			"xythed.reaper.ReaperClient"
+		]
+	},
+	"mixins": [
+		"reaper.mixins.json",
+		{
+			"config": "reaper.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
