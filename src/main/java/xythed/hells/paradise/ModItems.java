@@ -17,7 +17,7 @@ public class ModItems {
     public static final Item REAPERITE_HELMET = registerItem("reaperite_helmet", new ReaperiteArmorItem(ModArmorMaterials.REAPERITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item REAPERITE_CHESTPLATE = registerItem("reaperite_chestplate", new ReaperiteArmorItem(ModArmorMaterials.REAPERITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item REAPERITE_LEGGINGS = registerItem("reaperite_leggings", new ReaperiteArmorItem(ModArmorMaterials.REAPERITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
-    public static final Item REAPERITE_BOOTS = registerItem("reaperite_boots", new ReaperiteArmorItem(ModArmorMaterials.REAPERITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item REAPERITE_BOOTS = registerItem("reaperite_boots", new ReaperiteAbilities(ModArmorMaterials.REAPERITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
 

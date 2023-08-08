@@ -3,7 +3,8 @@
 	"package": "xythed.hells.paradise.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"HellsParadiseMixin"
+		"HellsParadiseMixin",
+		"FreezeLavaReaperiteMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
