@@ -5,6 +5,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import xythed.hells.paradise.ReaperiteBootsAbility;
 import net.minecraft.entity.Attackable;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -21,6 +22,6 @@ public abstract class FreezeLavaReaperiteMixin extends Entity implements Attacka
 
     @Inject(method = "applyMovementEffects()V", at = @At("HEAD"))
     public void applyMovementEffects(BlockPos pos, CallbackInfo info) {
-        xythed.hells.paradise.ReaperiteAbilities.freezeLava((LivingEntity)(Object) this, this.getWorld(), pos);
+        ReaperiteBootsAbility.freezeLava((LivingEntity)(Object) this, this.getWorld(), pos);
     }
 }

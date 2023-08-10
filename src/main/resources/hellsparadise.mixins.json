@@ -4,7 +4,9 @@
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"HellsParadiseMixin",
-		"FreezeLavaReaperiteMixin"
+		"FreezeLavaReaperiteMixin",
+		"KeepInventoryMixin",
+		"KeepInventoryServerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

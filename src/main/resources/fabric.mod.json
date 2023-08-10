@@ -20,7 +20,8 @@
 		],
 		"client": [
 			"xythed.hells.paradise.HellsParadiseClient"
-		]
+		],
+		"preLaunch": ["com.llamalad7.mixinextras.MixinExtrasBootstrap::init"]
 	},
 	"mixins": [
 		"hellsparadise.mixins.json",

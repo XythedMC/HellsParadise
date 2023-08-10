@@ -27,6 +27,8 @@ repositories {
             includeGroup "maven.modrinth"
         }
     }
+	maven { url 'https://jitpack.io' }
+	
 }
 
 loom {
@@ -57,7 +59,9 @@ dependencies {
 	modImplementation "maven.modrinth:cfQx2fbQ:9Lbefabw" // item alchemy
 	modImplementation "maven.modrinth:uNRoUnGT:8RxR45TS" // mcpitanlibarch
 	modImplementation "maven.modrinth:lhGA9TYQ:Sbew3kXe" // architectury
-	modImplementation "maven.modrinth:CFX9ftUJ:4Kg6Ecte" // advanced netherite
+	modImplementation "maven.modrinth:CFX9ftUJ:4Kg6Ecte" // advanced netherites
+	implementation("com.github.LlamaLad7:MixinExtras:0.1.1")
+    annotationProcessor("com.github.LlamaLad7:MixinExtras:0.1.1")
 }
 
 processResources {
