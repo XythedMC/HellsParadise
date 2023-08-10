@@ -1,7 +1,6 @@
 package xythed.hells.paradise.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
@@ -19,7 +18,6 @@ public abstract class KeepInventoryServerMixin extends PlayerEntity{
 
     public KeepInventoryServerMixin(World world, BlockPos pos, float yaw, GameProfile gameProfile) {
         super(world, pos, yaw, gameProfile);
-        //TODO Auto-generated constructor stub
     }
 
     @Override
