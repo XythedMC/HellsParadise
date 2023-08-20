@@ -11,7 +11,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import xythed.hells.paradise.ModItems;
+import xythed.hells.paradise.items.ModItems;
 
 @Mixin(ServerPlayerEntity.class)
 public abstract class KeepInventoryServerMixin extends PlayerEntity{

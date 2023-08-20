@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "ingredients",
+    "pattern": [
+        "i#i",
+        "iii",
+        "iii"
+    ],
+    "key": {
+        "i": {
+            "item": "hells_paradise:reaperite_ingot"
+        }
+    },
+    "result": {
+        "item": "hells_paradise:reaperite_chestplate"
+    }
+}

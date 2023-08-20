@@ -1,4 +1,4 @@
-package xythed.hells.paradise;
+package xythed.hells.paradise.items;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -9,16 +9,16 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import xythed.hells.paradise.*;
 
 public class ModItems {
     public static final Item REAPERITE_INGOT = registerItem("reaperite_ingot", new Item(new FabricItemSettings()));
-    public static final Item SOUL = registerItem("soul", new Item(new FabricItemSettings()));
+    public static final Item SOUL = registerItem("soul", new Item(new FabricItemSettings().maxCount(16)));
 
     public static final Item REAPERITE_HELMET = registerItem("reaperite_helmet", new ReaperiteHelmetAbility(ModArmorMaterials.REAPERITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item REAPERITE_CHESTPLATE = registerItem("reaperite_chestplate", new ReaperiteChestplateAbility(ModArmorMaterials.REAPERITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
-    public static final Item REAPERITE_LEGGINGS = registerItem("reaperite_leggings", new ReaperiteArmorItem(ModArmorMaterials.REAPERITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item REAPERITE_LEGGINGS = registerItem("reaperite_leggings", new ReaperiteLeggingsAbility(ModArmorMaterials.REAPERITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item REAPERITE_BOOTS = registerItem("reaperite_boots", new ReaperiteBootsAbility(ModArmorMaterials.REAPERITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
-
 
 
     public static Item registerItem(String name, Item item) {
@@ -28,7 +28,6 @@ public class ModItems {
 	public static void addItemToItemGroupIngredients(FabricItemGroupEntries entries){
 		entries.add(REAPERITE_INGOT);
         entries.add(SOUL);
-        
     }
 
     public static void addItemToItemGroupTools(Item item){

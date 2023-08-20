@@ -7,6 +7,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Lazy;
 import net.minecraft.util.StringIdentifiable;
 import net.minecraft.util.Util;
+import xythed.hells.paradise.items.ModItems;
 
 import java.util.EnumMap;
 import java.util.function.Supplier;

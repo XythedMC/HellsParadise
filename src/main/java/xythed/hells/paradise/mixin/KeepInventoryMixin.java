@@ -1,5 +1,5 @@
 package xythed.hells.paradise.mixin;
-import xythed.hells.paradise.ModItems;
+import xythed.hells.paradise.items.ModItems;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;

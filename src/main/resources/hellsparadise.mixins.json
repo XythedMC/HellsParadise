@@ -6,7 +6,8 @@
 		"HellsParadiseMixin",
 		"FreezeLavaReaperiteMixin",
 		"KeepInventoryMixin",
-		"KeepInventoryServerMixin"
+		"KeepInventoryServerMixin",
+		"NoFallDamageMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

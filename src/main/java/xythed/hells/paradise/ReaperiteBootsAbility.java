@@ -1,10 +1,6 @@
 package xythed.hells.paradise;
 
 
-import java.util.List;
-
-import org.jetbrains.annotations.Nullable;
-
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.ShapeContext;
@@ -23,6 +19,10 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
+import xythed.hells.paradise.items.ModItems;
+
+import java.util.List;
 
 
 public class ReaperiteBootsAbility extends ArmorItem {
@@ -59,6 +59,8 @@ public class ReaperiteBootsAbility extends ArmorItem {
             world.scheduleBlockTick(blockPos2, Blocks.BASALT, MathHelper.nextInt(entity.getRandom(), 60, 120));
         }
     }
+
+    //
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
