@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+
+        {
+            "item": "minecraft:soul_sand"
+        },
+        {
+            "item": "minecraft:netherite_shovel"
+        }
+
+    ],
+    "result": {
+        "item": "hellsparadise:soul",
+        "count": 1
+    }
+}

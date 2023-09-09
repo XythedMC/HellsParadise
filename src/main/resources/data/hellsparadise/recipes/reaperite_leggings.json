@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iii",
+        "i i",
+        "i i"
+    ],
+    "key": {
+        "i": {
+            "item": "hellsparadise:reaperite_ingot"
+        }
+    },
+    "result": {
+        "item": "hellsparadise:reaperite_leggings",
+        "count": 1
+    }
+}

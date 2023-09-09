@@ -43,24 +43,6 @@ loom {
 	}
 
 }
-// build.gradle
-modrinth {
-	token = System.getenv("MODRINTH_TOKEN") // Remember to have the MODRINTH_TOKEN environment variable set or else this will fail - just make sure it stays private!
-	projectId = "hells-paradise" // This can be the project ID or the slug. Either will work!
-	versionNumber = "0.0.1" // You don't need to set this manually. Will fail if Modrinth has this version already
-	versionType = "alpha" // This is the default -- can also be `beta` or `alpha`
-	uploadFile = remapJar // With Loom, this MUST be set to `remapJar` instead of `jar`!
-	gameVersions = ["1.20", "1.20.1"] // Must be an array, even with only one version
-	loaders = ["fabric"] // Must also be an array - no need to specify this if you're using Loom or ForgeGradle
-	dependencies { // A special DSL for creating dependencies
-		// scope.type
-		// The scope can be `required`, `optional`, `incompatible`, or `embedded`
-		// The type can either be `project` or `version`
-		required.project "fabric-api" // Creates a new required dependency on Fabric API
-		required.version "itemalchemy", "1.20.1-0.7.2"
-		required.version "itemalchemy", "1.20.1-0.7.2"// Creates a new optional dependency on this specific version of Sodium
-	}
-}
 
 dependencies {
 
@@ -82,6 +64,7 @@ dependencies {
 	modImplementation "maven.modrinth:CFX9ftUJ:4Kg6Ecte" // advanced netherites
 	implementation("com.github.LlamaLad7:MixinExtras:0.1.1")
     annotationProcessor("com.github.LlamaLad7:MixinExtras:0.1.1")
+	include "com.github.LlamaLad7:MixinExtras:0.1.1"
 }
 
 processResources {

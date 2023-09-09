@@ -1,14 +1,13 @@
 {
     "type": "minecraft:crafting_shaped",
-    "category": "ingredients",
     "pattern": [
-        "dpd",
-        "ono",
-        "dnd"
+        "odo",
+        "npn",
+        "odo"
     ],
     "key": {
         "o": {
-            "item": "hells_paradise:soul"
+            "item": "hellsparadise:soul"
         },
         "d": {
             "item": "itemalchemy:dark_matter"
@@ -18,10 +17,14 @@
         },
         "n": {
             "item": "advancednetherite:netherite_diamond_ingot"
+        },
+        "r": {
+            "item": "itemalchemy:red_matter"
         }
     
     },
     "result": {
-        "item": "hells_paradise:reaperite_ingot"
+        "item": "hellsparadise:reaperite_ingot",
+        "count": 1
     }
 }

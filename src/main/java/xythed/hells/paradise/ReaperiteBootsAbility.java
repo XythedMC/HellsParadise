@@ -41,7 +41,6 @@ public class ReaperiteBootsAbility extends ArmorItem {
         }
     }
 
-
     public static void freezeLava(LivingEntity entity, World world, BlockPos blockPos) {
         if (!entity.isOnGround()) {
             return;

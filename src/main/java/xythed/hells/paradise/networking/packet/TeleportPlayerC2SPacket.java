@@ -15,7 +15,11 @@ public class TeleportPlayerC2SPacket {
         //Everything here happens ONLY on the server
         if ( SavePositionC2SPacket.x != 0.0 && SavePositionC2SPacket.y != 0.0 && SavePositionC2SPacket.z != 0.0){
             if (player.getEquippedStack(EquipmentSlot.CHEST).isOf(ModItems.REAPERITE_CHESTPLATE)){
-                player.requestTeleport(SavePositionC2SPacket.x, SavePositionC2SPacket.y, SavePositionC2SPacket.z);
+                if (player.getEntityWorld().getDimension() != SavePositionC2SPacket.dimension){
+                    player.teleport(SavePositionC2SPacket.world, SavePositionC2SPacket.x, SavePositionC2SPacket.y, SavePositionC2SPacket.z, 0, 0);
+                } else{
+                    player.teleport(SavePositionC2SPacket.x, SavePositionC2SPacket.y, SavePositionC2SPacket.z);
+                }
                 player.damage(player.getDamageSources().genericKill(), 8);
                 player.sendMessage(Text.literal("Teleported Player!").formatted(Formatting.BLUE));
             }

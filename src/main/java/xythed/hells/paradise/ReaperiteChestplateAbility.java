@@ -22,7 +22,6 @@ public class ReaperiteChestplateAbility extends ArmorItem {
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.literal("Teleport Steal").formatted(Formatting.AQUA));
         tooltip.add(Text.literal("Allows the player to save their position and teleport to that position on any time but at the cost of four hearts.").formatted(Formatting.DARK_GRAY));
-        tooltip.add(Text.literal("WARNING! You cannot teleport across dimensions!").formatted(Formatting.RED));
         super.appendTooltip(stack, world, tooltip, context);
     }
 

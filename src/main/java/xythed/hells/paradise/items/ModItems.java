@@ -17,7 +17,7 @@ public class ModItems {
 
     public static final Item REAPERITE_HELMET = registerItem("reaperite_helmet", new ReaperiteHelmetAbility(ModArmorMaterials.REAPERITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item REAPERITE_CHESTPLATE = registerItem("reaperite_chestplate", new ReaperiteChestplateAbility(ModArmorMaterials.REAPERITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
-    public static final Item REAPERITE_LEGGINGS = registerItem("reaperite_leggings", new ReaperiteLeggingsAbility(ModArmorMaterials.REAPERITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item REAPERITE_LEGGINGS = registerItem("reaperite_leggings",  new ReaperiteLeggingsAbility(ModArmorMaterials.REAPERITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item REAPERITE_BOOTS = registerItem("reaperite_boots", new ReaperiteBootsAbility(ModArmorMaterials.REAPERITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
@@ -29,10 +29,6 @@ public class ModItems {
 		entries.add(REAPERITE_INGOT);
         entries.add(SOUL);
     }
-
-    public static void addItemToItemGroupTools(Item item){
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(item));
-	}
 
     public static void addItemToItemGroupCombat(FabricItemGroupEntries entries){
 		entries.add(REAPERITE_HELMET);
