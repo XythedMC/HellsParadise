@@ -5,7 +5,6 @@
   "mixins": [
     "FreezeLavaReaperiteMixin",
     "HellsParadiseMixin",
-    "JumpBoostMixin",
     "KeepInventoryMixin",
     "KeepInventoryServerMixin",
     "NoFallDamageMixin"

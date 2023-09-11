@@ -28,13 +28,23 @@ repositories {
             includeGroup "maven.modrinth"
         }
     }
+	maven {
+		name = "Example"
+		url = "https://maven.fabricmc.net"
+	}
 	maven { url 'https://jitpack.io' }
-	
+	maven {
+		name = 'Ladysnake Mods'
+		url = 'https://maven.ladysnake.org/releases'
+		content {
+			includeGroup 'io.github.ladysnake'
+			includeGroupByRegex 'io\\.github\\.onyxstudios.*'
+		}
+	}
 }
 
 loom {
     splitEnvironmentSourceSets()
-
 	mods {
 		"modid" {
 			sourceSet sourceSets.main
@@ -65,6 +75,8 @@ dependencies {
 	implementation("com.github.LlamaLad7:MixinExtras:0.1.1")
     annotationProcessor("com.github.LlamaLad7:MixinExtras:0.1.1")
 	include "com.github.LlamaLad7:MixinExtras:0.1.1"
+	modImplementation "io.github.ladysnake:PlayerAbilityLib:${pal_version}"
+	include "io.github.ladysnake:PlayerAbilityLib:${pal_version}"
 }
 
 processResources {

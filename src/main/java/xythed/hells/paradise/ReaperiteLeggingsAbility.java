@@ -33,7 +33,6 @@ public class ReaperiteLeggingsAbility extends ArmorItem{
         if (slot == EquipmentSlot.LEGS){
             EntityAttributeModifier entityAttributeModifier = new EntityAttributeModifier(UUID.fromString("8a2c421a-424b-4ec8-83e1-1f4b6d0c450f"), this::getTranslationKey, 0.33, EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
             attributeModifiers.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, entityAttributeModifier);
-            attributeModifiers.put(ReaperiteAttributes.GENERIC_JUMP_BOOST, ReaperiteAttributes.entityAttributeModifier);
             return attributeModifiers;
         }
         return super.getAttributeModifiers(slot);

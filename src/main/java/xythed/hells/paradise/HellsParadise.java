@@ -13,6 +13,7 @@ public class HellsParadise implements ModInitializer {
     public void onInitialize() {
 		  ModItems.registerModItems();
           ModMessages.registerS2CPackets();
+          ReaperiteArmorEffects.init();
     }
 
 }
